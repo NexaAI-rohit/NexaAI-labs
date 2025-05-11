@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaAI Labs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      margin: 0.2em 0;
+    }
+
+    .emoji {
+      font-size: 2.5em;
+      animation: float 1.8s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+      color: #cccccc;
+    }
+
+    .email-box {
+      margin-top: 20px;
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      width: 250px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      font-size: 1em;
+    }
+
+    button {
+      margin-left: 10px;
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      background: #00ffff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #00cccc;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      input[type="email"] {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🚀</div>
+  <h1>NexaAI Labs</h1>
+  <p>Your AI Empire is under construction...<br>Launching Soon. Stay Tuned.</p>
+
+  <div class="email-box">
+    <input type="email" placeholder="Enter your email" />
+    <button>Notify Me</button>
+  </div>
+</body>
+</html>
