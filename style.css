@@ -1,65 +1,53 @@
 body {
-    margin: 0;
-    font-family: 'Orbitron', sans-serif;
-    background-color: #0d0d0d;
-    color: #ffffff;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
-
 .hero {
-    background: linear-gradient(135deg, #00f0ff, #0f0f3a);
-    text-align: center;
-    padding: 60px 20px;
-    box-shadow: 0 0 20px #00f0ff;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0fffc1 0%, #7e0fff 100%);
+  color: #0f0f0f;
+  animation: glow 2s infinite alternate;
 }
-
-.logo {
-    font-size: 3em;
-    color: #00f0ff;
-    text-shadow: 0 0 10px #00f0ff;
-}
-
 .tagline {
-    font-size: 1.2em;
-    color: #ffffff;
-    margin-top: 10px;
+  font-size: 1.2rem;
+  color: #0f0f0f;
 }
-
-.services {
-    padding: 40px 20px;
-    text-align: center;
+.about, .services, .contact {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
-
-.services h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #00f0ff;
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
 }
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 .service-card {
-    background: #1a1a1a;
-    padding: 20px;
-    border: 1px solid #00f0ff;
-    border-radius: 10px;
-    box-shadow: 0 0 15px #00f0ff50;
-    transition: transform 0.3s ease;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 15px #7e0fff;
+  transition: transform 0.3s ease;
 }
-
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 25px #00f0ff;
+  transform: scale(1.05);
 }
-
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #0f0f0f;
-    color: #777;
+  text-align: center;
+  padding: 20px;
+  background-color: #141414;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #0fffc1, 0 0 20px #7e0fff;
+  }
+  to {
+    text-shadow: 0 0 20px #0fffc1, 0 0 40px #7e0fff;
+  }
 }
